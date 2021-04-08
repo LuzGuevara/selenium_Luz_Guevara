@@ -1,0 +1,10 @@
+primer codigo de ejemplo 
+
+public class pararepo {
+    public static void main(String[] args) {
+
+        System.out.println("HOLA MUNDO");
+
+    }
+
+}
