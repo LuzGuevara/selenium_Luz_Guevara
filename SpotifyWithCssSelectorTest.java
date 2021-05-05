@@ -25,15 +25,15 @@ public class SpotifyWithCssSelectorTest {
         driver.findElement(By.cssSelector("input[placeholder='Crea una contraseña.']")).sendKeys("test123");
         driver.findElement(By.cssSelector("input[placeholder='Introduce un nombre de perfil.']")).sendKeys("luzan");
         driver.findElement(By.cssSelector("input[placeholder='DD']")).sendKeys("27");
-        driver.findElement(By.cssSelector("input[placeholder='AAAA']")).sendKeys("1984");
         Select mes = new Select(driver.findElement(By.cssSelector("select[name='month']")));
         mes.selectByValue("04");
+        driver.findElement(By.cssSelector("input[placeholder='AAAA']")).sendKeys("1984");
+        driver.findElement(By.xpath("//*[contains(text(),'Mujer')]")).click();
+        driver.findElement(By.cssSelector("span[class = 'Indicator-sc-11vkltc-0 ioJObh']")).click();
+        driver.findElement(By.cssSelector("label[for = 'third-party-checkbox']")).click();
 
-        driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[2]/div/form/fieldset/div/div[2]/label/span[2]")).click();
 
-        driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[2]/div/form/div[6]/div/label/span[2]")).click();
 
-        driver.findElement(By.xpath("//*[@id=\"__next\"]/main/div[2]/div/form/div[7]/div/label")).click();
 
     }
 
